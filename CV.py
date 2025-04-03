@@ -42,7 +42,7 @@ st.set_page_config(
     )
 
 # Background Image
-add_bg_from_local('C:/Users/lEO/Desktop/Digital CV/img/magicpattern (3).png')
+add_bg_from_local('img/magicpattern (3).png')
 
 # Page Info
 col4, col5 = st.columns([5, 1])
@@ -51,7 +51,7 @@ with col4:
     
 with col5:
     from PIL import Image
-    img = Image.open('C:/Users/lEO/Desktop/Digital CV/img/Profile.PNG')
+    img = Image.open('img/Profile.PNG')
     st.image(img, width = 70)
     
 
@@ -78,7 +78,7 @@ with st.container():
     st.subheader('Work Experience')
     with st.container():
         st.markdown("##### Power BI Instructor,")
-        img1 = Image.open('C:/Users/lEO/Desktop/Digital CV/img/Picture1.png')
+        img1 = Image.open('img/Picture1.png')
         st.image(img1, width = 170)
         st.markdown("###### Gomycode, August 2023 - Present.")
         st.write("""
@@ -96,7 +96,7 @@ with st.container():
     st.markdown('<br> </br>', unsafe_allow_html=True)
     with st.container():
         st.markdown("##### Business Intelligence Instructor,")
-        img1 = Image.open('C:/Users/lEO/Desktop/Digital CV/img/Picture1.png')
+        img1 = Image.open('img/Picture1.png')
         st.image(img1, width = 170)
         st.markdown("###### Gomycode, July 2023 - Present.")
         st.write("""
@@ -114,7 +114,7 @@ with st.container():
     st.markdown('<br> </br>', unsafe_allow_html=True)
     with st.container():
         st.markdown("##### Data Science Instructor,")
-        img2 = Image.open('C:/Users/lEO/Desktop/Digital CV/img/Picture1.png')
+        img2 = Image.open('img/Picture1.png')
         st.image(img2, width = 170)
         st.markdown("###### Gomycode, February 2023 - Present.")
         st.write("• Achieved a high Net Promoter Score (NPS) of 90% across all mentoring groups, mentoring over 30 data scientists.")
@@ -127,7 +127,7 @@ with st.container():
     st.markdown('<br> </br>', unsafe_allow_html=True)
     with st.container():
         st.markdown("##### Corper Analyst")
-        img3 = Image.open('C:/Users/lEO/Desktop/Digital CV/img/NYSC_LOGO.svg.png')
+        img3 = Image.open('img/NYSC_LOGO.svg.png')
         st.image(img3, width = 50)
         st.markdown("###### National Youth Service Corps (NYSC), February 2022 - January 2023.")
         st.write('• Completed a one-year national service program in Ikeja, Lagos state.')
@@ -307,7 +307,7 @@ with st.container():
                      • Customer Segmentation Model.
                      """)
             st.divider()
-            st.button()
+            st.button(label = "View")
                      
     with col12:
         with st.expander(label = "Socials"):
